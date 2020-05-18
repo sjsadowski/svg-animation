@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>Animation Test</title>
+
+  <style>
+    @font-face {
+      font-family: 'computo';
+      src: url(fonts/computo-monospace.otf);
+    }
+    body {
+      padding: 0;
+      spacing: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div style="display: block; width: 100%; height: 450px; background: url(img/Star-field-hubble-deep.jpeg); text-align: center">
+    <div style="font-family: 'computo'; font-size: 40px; color: red; padding-top: 30px">Rockets2Mars</div>
+    <svg width="800" height="400" version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink">
+      <image transform="rotate(45, 40, 40)" height="80" width="80"  xlink:href="img/033-launch.svg">
+      <animateMotion dur="10s" repeatCount="indefinite"
+          path="M 110 170 L 220 170 678 170 Z"
+          rotate="auto"/>
+      </image>
+      <image x="0" y="100" height="150" width="150" xlink:href="img/010-earth.svg" />
+      <image x="625" y="100" height="150" width="150" xlink:href="img/021-mars.svg" />
+
+
+    </svg>
+  </div>
+  <div style="width: 100%; text-align: center; padding-top: 2%">
+    <div style="display: inline-block; width: 30%">
+      <span style="font-family: sans-serif; font-size: 30px;">Our Rockets</span> <br />
+      Learn about our rockets!
+    </div>
+    <div style="display: inline-block; width: 30%">
+      <span style="font-family: sans-serif; font-size: 30px;">Flights</span> <br />
+      What is it like to fly to Mars?
+    </div>
+    <div style="display: inline-block; width: 30%">
+      <span style="font-family: sans-serif; font-size: 30px;">Let's Go!</span> <br />
+      You're jazzed? Let's get you booked!
+    </div>
+  </div>
+</body>
+<html>
